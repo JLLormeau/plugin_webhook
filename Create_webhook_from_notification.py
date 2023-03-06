@@ -11,7 +11,7 @@ import urllib3
 Tenant="https://"+str(os.getenv('MyTenant'))
 Token=os.getenv('MyToken')
 activeGate_id=os.getenv('ActiveGateId')
-endpoint=['xxxx','yyyy'] #filter on endpoint xxxx.domain.com or yyyy.domain.com
+#endpoint=['xxxx','yyyy'] #filter on endpoint xxxx.domain.com or yyyy.domain.com
 
 ##################################
 ## API
@@ -150,16 +150,15 @@ def getnotification(TENANT, TOKEN):
         if notification['type']=='WEBHOOK' :
             uri=TENANT+APInotification+'/'+notification['id']+'?Api-Token='+TOKEN
             datastore = queryDynatraceAPI(uri)
-            if datastore['url'].replace('/','.').split('.')[2] in endpoint : 
             
-                if datastore['alertingProfile'] in AlertingProfileDic:
+            if datastore['alertingProfile'] in AlertingProfileDic:
                     createEndpoint(TENANT, TOKEN, datastore['url'], datastore['payload'], datastore['name'], AlertingProfileDic[datastore['alertingProfile']], datastore['name'])
-                else:
-                    print('Notifiaction', datastore['name'], ': alertingProfileId', datastore['alertingProfile'], 'has no reference' )
+            else:
+                print('Notifiaction', datastore['name'], ': alertingProfileId', datastore['alertingProfile'], 'has no reference' )
                 newendpoint=True
                 
     if not newendpoint:
-        print('no Webhook endpoint on ',endpoint )
+        print('no Webhook endpoint' )
 
 
     return()
@@ -212,7 +211,6 @@ def createEndpoint(TENANT, TOKEN, WebhookUrl, CustomPayload, WebhookName, Alerti
 print('Tenant',Tenant)
 print('Token',Token)
 print('activeGate_id',activeGate_id)
-print('endpoint', endpoint)
 print()
 getalertingprofile(Tenant, Token)
 getnotification(Tenant, Token)
