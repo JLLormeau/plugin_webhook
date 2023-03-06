@@ -19,12 +19,12 @@
 - Token scope: `configurations read`, `configurations write`
 - Python 3.6+, module requests
 
-2) Set variable 
+1) Set variable 
 
        export MyTenan=yyyy.live.dynatrace.com (without https://)
        export MyToken=xxxx
        export ActiveGateId=zzzz
        
-3) run the python script 
+2) run the python script 
 
        python3 Create_webhook_from_notification.py 
