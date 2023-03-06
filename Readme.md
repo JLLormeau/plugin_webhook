@@ -1,8 +1,8 @@
 # Plugin Webhook
 ![image](https://user-images.githubusercontent.com/40337213/223125054-62b49f14-5f77-4f82-ae98-95d37b2605ba.png)
 
-[Download ZIP](https://github.com/JLLormeau/plugin_webhook/raw/main/custom.remote.python.webhook.zip)
-[Doc](https://github.com/JLLormeau/plugin_webhook/blob/main/Dynatrace_PluginWebhook.pdf)
+Download ZIP, click [here](https://github.com/JLLormeau/plugin_webhook/raw/main/custom.remote.python.webhook.zip)  
+Doc, click [here](https://github.com/JLLormeau/plugin_webhook/blob/main/Dynatrace_PluginWebhook.pdf)  
 
 0) Prerequisite : Token scope: `problems read`, `problems write`
 1) Upload `custom.remote.python.webhook.zip` on UI
