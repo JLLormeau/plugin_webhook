@@ -5,7 +5,7 @@ Download ZIP, click [here](https://github.com/JLLormeau/plugin_webhook/raw/main/
 Doc, click [here](https://github.com/JLLormeau/plugin_webhook/blob/main/Dynatrace_PluginWebhook.pdf)  
 
 0) Prerequisite : Token scope: `problems read`, `problems write`
-1) Upload `custom.remote.python.webhook.zip` on UI
+1) Upload `custom.remote.python.webhook.zip` on UI, 
 3) Unzip  `custom.remote.python.webhook.zip` on AG 
 4) Restart `remotepluginmodule` service on AG
 5) Configure endpoint on UI 
@@ -28,3 +28,4 @@ Doc, click [here](https://github.com/JLLormeau/plugin_webhook/blob/main/Dynatrac
 2) Run the python script 
 
        python3 Create_webhook_from_notification.py 
+       
