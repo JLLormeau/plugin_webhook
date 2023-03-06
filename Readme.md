@@ -11,7 +11,7 @@ Doc, click [here](https://github.com/JLLormeau/plugin_webhook/blob/main/Dynatrac
 5) Configure endpoint on UI 
 
 
-![image](https://user-images.githubusercontent.com/40337213/223127129-6727168e-7c1a-470b-9aac-e15f647d5510.png)
+![image](https://user-images.githubusercontent.com/40337213/223132299-8a3bb38b-f539-4535-a660-2c1b030f601f.png)
 
 ## Generate endpoint from notification (optionnal)
 
