@@ -6,4 +6,4 @@
 4) Restart `remotepluginmodule` service on AG
 5) Configure endpoint on UI 
 
-![image](https://user-images.githubusercontent.com/40337213/223126941-42fe36c4-df67-46ab-89db-3b6b5ad4f06b.png)
+![image](https://user-images.githubusercontent.com/40337213/223127129-6727168e-7c1a-470b-9aac-e15f647d5510.png)
